@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Planetary Data Table</title>
+  <style>
+    /* Base table styles */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    /* Border around the second column */
+    table tr td:nth-of-type(2),
+    table tr th:nth-of-type(2) {
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Planetary Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Mass (10<sup>24</sup>kg)</th>
+        <th>Diameter (km)</th>
+        <!-- Other headers -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mercury</td>
+        <td>0.330</td>
+        <td>4,879</td>
+        <!-- Other data cells -->
+      </tr>
+      <!-- More rows -->
+    </tbody>
+  </table>
+</body>
+</html>
