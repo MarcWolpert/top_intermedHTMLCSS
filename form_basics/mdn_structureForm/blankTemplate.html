@@ -37,12 +37,12 @@
         <p>
           <label for="name"
             ><span>Name:</span><strong><span>*</span></strong></label
-          ><input type="text" name="username" id="name" />
+          ><input type="text" name="username" id="name" value="John Doe"/>
         </p>
         <p>
           <label for="mail"
             ><span>Email:</span><strong><span>*</span></strong></label
-          ><input type="email" name="user-mail" id="mail" />
+          ><input type="email" name="user-mail" id="mail" placeholder="address@example.com" />
         </p>
         <p>
           <label for="pwd"
@@ -66,7 +66,14 @@
         <p><label for="expiration"><span>Expiration date:</span><strong><span aria-label="required">*</span></strong></label>
           <input type="text" name="expiration" id="expiration" required placeholder="MM/YY" pattern="^(0[1-9]|1[0-2])\/([0-9]{2})$">
         </p>
+        <p>
+          <lable>Are you sure you want to submit?</lable>
+          <input type="checkbox" name="consent" id="consentButton" required>
+        </p>
+        <p><label for="proofOfConsent">Submit your proof of consent</label><input type="file" name="proof" id="proof" multiple></p>
       </section>
+      <!-- Useful for mobile devices but doesn't work on my desktop computer -->
+      <p><label for="audioConsent">Microphone Consent</label><input type="file" accept="audio/*;capture=microphone"></p>
       <section>
         <p><button type="submit">Validate the payment</button></p>
       </section>

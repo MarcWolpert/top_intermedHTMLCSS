@@ -58,6 +58,7 @@ h1 {
   
   button {
     margin: 20px 0 0 0;
+    border-radius:10%;
   }
   
   label {
@@ -68,3 +69,9 @@ h1 {
     width: 100%;
   }
   
+  button:hover{
+    color:"white";
+    background-color: #66b2b2;
+    border-color:orange;
+    border-width:3%;
+  }
